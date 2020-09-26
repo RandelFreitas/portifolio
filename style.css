@@ -1,0 +1,88 @@
+body, ul, il, p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: black;
+}
+a, p{
+  text-decoration: none;
+  color: white;
+}
+.img_aut{
+  margin: auto 0;
+  width:70px;
+  height:20px;
+}
+.wrap_header{
+  background: #1d1e20;
+  position: sticky;
+  top: 0;
+}
+.header{
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.menu{
+  display: flex;
+}
+.menu li{
+  margin-left: 10px;
+}
+.menu li a{
+  display: block;
+  padding: 10px; 
+}
+/*SOBRE*/
+.wrap_sobre{
+  background: #161618;
+  padding: 100px 0;
+}
+.sobre{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #161618;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 10px;
+}
+.img_eu{
+  max-width: 250px;
+  margin: auto;
+}
+/*ARTIGOS*/
+.wrap_artigos{
+  background:#232325;
+  padding: 100px 0;
+}
+.artigos{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 10px;
+}
+/*EM PROD*/
+.wrap_em_prod{
+  background: #161618;
+  padding: 100px 0;
+}
+.em_prod{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 10px;
+}
+/*FOOTER*/
