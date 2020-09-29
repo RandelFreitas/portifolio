@@ -2,7 +2,7 @@ body, ul, il, p {
   margin: 0px;
   padding: 0px;
   list-style: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 body{
   background: black;
@@ -11,54 +11,90 @@ a, p{
   text-decoration: none;
   color: white;
 }
-.img_aut{
-  margin: auto 0;
-  width:70px;
-  height:20px;
-}
+/*MENU*/
 .wrap_header{
-  background: #1d1e20;
+  background: black;
   position: sticky;
   top: 0;
 }
 .header{
-  max-width: 800px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  max-width: 800px;
   padding: 10px;
-}
-.menu{
-  display: flex;
-}
-.menu li{
-  margin-left: 10px;
-}
-.menu li a{
-  display: block;
-  padding: 10px; 
 }
 /*SOBRE*/
 .wrap_sobre{
-  background: #161618;
-  padding: 100px 0;
+  background: linear-gradient(0,  #000000, #120c56);
+  padding: 70px 0;
 }
 .sobre{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background: #161618;
-  gap: 20px;
+  grid-template-columns: 1fr;
+  padding: 20px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 10px;
 }
 .img_eu{
-  max-width: 250px;
+  max-width: 150px;
+  padding: 5px;
+  border: solid 8px #232325;
+  border-radius: 50%;
   margin: auto;
+  transition: 0.5s ease-in;
+}
+.img_eu:hover{
+  border: solid 8px rgb(56, 56, 56);
+  transition: 0.5s ease-in;
+}
+.name{
+  padding-top: 15px;
+  margin: auto;
+}
+hr{
+  border-color: white;
+  box-sizing: 1px;
+  margin-top: 20px;
+  width: 250px;
+}
+.grad{
+  margin: auto;
+  padding-top: 15px;
+}
+.stack{
+  margin: auto;
+  padding-top: 5px;
+}
+.bio{
+  display: flex;
+  margin: auto;
+  padding-top: 20px ;
+}
+.bio > li > a{
+  padding: 0 2px;
+}
+.fab{
+  color: white;
+  font-size: 40px;
+  opacity: 0.7;
+  transition: 0.3s ease-in;
+}
+.fab:hover{
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+.fas{
+  opacity: 0.7;
+  color: white;
+  font-size: 40px;
+  transition: 0.3s ease-in;
+}
+.fas:hover{
+  opacity: 1;
+  transition: 0.3s ease-in;
 }
 /*ARTIGOS*/
 .wrap_artigos{
-  background:#232325;
+  background: #000000;
   padding: 100px 0;
 }
 .artigos{
@@ -69,9 +105,12 @@ a, p{
   max-width: 800px;
   padding: 10px;
 }
+.img_artigos{
+  border-radius: 5px;
+}
 /*EM PROD*/
 .wrap_em_prod{
-  background: #161618;
+  background: linear-gradient(0, #120c56, #000000);
   padding: 100px 0;
 }
 .em_prod{
@@ -82,4 +121,6 @@ a, p{
   max-width: 800px;
   padding: 10px;
 }
-/*FOOTER*/
+.img_prod{
+  border-radius: 5px;
+}
